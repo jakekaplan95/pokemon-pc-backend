@@ -1,0 +1,2 @@
+class Pokemonteam < ApplicationRecord
+end

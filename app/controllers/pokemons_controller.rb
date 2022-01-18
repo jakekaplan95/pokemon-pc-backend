@@ -16,31 +16,6 @@ class PokemonsController < ApplicationController
     render json: @pokeresponse
   end
 
-  # POST /pokemons
-  def create
-    @pokemon = Pokemon.new(pokemon_params)
-
-    if @pokemon.save
-      render json: @pokemon, status: :created, location: @pokemon
-    else
-      render json: @pokemon.errors, status: :unprocessable_entity
-    end
-  end
-
-  # PATCH/PUT /pokemons/1
-  def update
-    if @pokemon.update(pokemon_params)
-      render json: @pokemon
-    else
-      render json: @pokemon.errors, status: :unprocessable_entity
-    end
-  end
-
-  # DELETE /pokemons/1
-  def destroy
-    @pokemon.destroy
-  end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_pokemon
