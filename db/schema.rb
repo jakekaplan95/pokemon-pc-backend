@@ -17,12 +17,12 @@ ActiveRecord::Schema.define(version: 2022_01_18_210028) do
 
   create_table "pokemonteams", force: :cascade do |t|
     t.string "name"
-    t.integer "pokemon1"
-    t.integer "pokemon2"
-    t.integer "pokemon3"
-    t.integer "pokemon4"
-    t.integer "pokemon5"
-    t.integer "pokemon6"
+    t.string "pokemon1"
+    t.string "pokemon2"
+    t.string "pokemon3"
+    t.string "pokemon4"
+    t.string "pokemon5"
+    t.string "pokemon6"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
