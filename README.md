@@ -24,6 +24,4 @@ Buttons were added to connect to metamask in order to make blockchain transactio
 
 # Roadblocks
 
-One of the largest roadblocks in this project was getting the pokemon files from the pokeapi to return raw JSON. This made it very hard for Opensea to catch the pokemons information to be displayed in the nft. This was remedied by having Opensea connect through the frontend to a github pages that is hosting all of the pokemon information to be used
-
-React doesnt support having routes that return something that is a non-html repsonse. Opensea and other interaction systesms do not behave well using HTML based metadata apis. I remedied this by having the react frontedend redirect the api calls to a non-react backend via github pages and hosting the pokemon information there.
+React doesnt support having routes that return something that is a non-html repsonse. Opensea and other interaction systesms do not behave well using HTML based metadata apis. I remedied this by having the react frontend redirect the api calls to a non-react backend via github pages and hosting the pokemon information there.
